@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 import pickle
 import lightgbm as lgb
@@ -18,7 +17,7 @@ pickle_in = open('./gr_grid_modele_file.pkl','rb')
 model= pickle.load(pickle_in) 
 
 # traitements des données avec Streamlit :  on teste avec  le id(s) :203725,00 et 187655,00
-st.sidebar.number_input("Identifiant_client", key="name")
+st.sidebar.number_input("Identifiant__client", key="name")
 # trois cas possibles
 id_client=st.session_state.name
 if  id_client==0:

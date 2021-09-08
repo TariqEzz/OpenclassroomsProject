@@ -1,0 +1,6 @@
+lightgbm==3.2.1
+pandas==1.2.5
+streamlit==0.87.0
+matplotlib==3.4.2
+shap==0.39.0
+scikit_learn==0.24.2
